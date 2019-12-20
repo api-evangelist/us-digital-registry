@@ -1,0 +1,96 @@
+{
+    "id": "ee3c861ce5a2de831c96b5e74617a182",
+    "name": "U.S. Digital Registry Agency API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "fe1d591892617dde82958964d48ceb26",
+            "name": "Agencies",
+            "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/agencies.json",
+            "description": "This lists all active agencies in the system. These agencies can be used to query for social media accounts, mobile products, and galleries.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "String to compare to the name & acronym of the agencies.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Number of results per page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Page number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "no_accounts",
+                    "description": "Including this parameter with value 'true' will cause the endpoint to include agencies that have no account in the system",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ee3c861ce5a2de831c96b5e74617a182",
+            "rawModeData": ""
+        },
+        {
+            "id": "bbf03203c0a8af54fceb63766cdaa0b1",
+            "name": "Agency",
+            "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/agencies\/{id}.json",
+            "description": "This returns an agency based on an ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID of the agency",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ee3c861ce5a2de831c96b5e74617a182",
+            "rawModeData": ""
+        }
+    ]
+}
