@@ -1,0 +1,141 @@
+{
+    "id": "4fcd4b160c168d59414bdd6f35df72a1",
+    "name": "U.S. Digital Registry Mobile App API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "26612daa39edae21775cafbbc5a30c97",
+            "name": "Mobile App Token",
+            "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/\/mobile_apps\/tokeninput.json",
+            "description": "This returns tokens representing agencies, tags, and a basic text search token for the purpose of building search dialogs",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "String to compare to the various values",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4fcd4b160c168d59414bdd6f35df72a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "b1eb0ba8d2f7a173c69f5021fc2a9b80",
+            "name": "Mobile Apps",
+            "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/\/mobile_apps.json",
+            "description": "This lists all active mobile apps.  It accepts parameters to perform basic search as well as searching by tag and agency.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "String to compare to the various values",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "agencies",
+                    "description": "Comma separated list of agency ids",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "Comma separated list of tag ids",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "language",
+                    "description": "Language of the social media accounts to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Number of results per page, defaults to 25",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Page number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4fcd4b160c168d59414bdd6f35df72a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "a1a9b816b9f225017068e2aa466781a6",
+            "name": "Mobile App",
+            "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/\/mobile_apps\/{id}.json",
+            "description": "This returns an mobile app based on an ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID of the mobile app",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4fcd4b160c168d59414bdd6f35df72a1",
+            "rawModeData": ""
+        }
+    ]
+}
