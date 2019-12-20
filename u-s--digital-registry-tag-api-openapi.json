@@ -1,0 +1,71 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "U.S. Digital Registry Tag API",
+        "description": "Provides a access to the list of tags applied to federal government agencies and their social media accounts.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/"
+    ],
+    "paths": {
+        "\/tags\/types.json": {
+            "get": {
+                "summary": "Tag Types",
+                "description": "This returns a tag based on an ID.",
+                "operationId": "Api::V1::Tags#types",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/tags.json": {
+            "get": {
+                "summary": "Tags",
+                "description": "This lists all tags.  It accepts parameters to perform basic search.",
+                "operationId": "Api::V1::Tags#index",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "String to compare to the short name of tags."
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Comma separated list of tag types"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Number of results per page"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number"
+                    }
+                ]
+            }
+        },
+        "\/tags\/{id}.json": {
+            "get": {
+                "summary": "Tag",
+                "description": "This returns a tag based on an ID.",
+                "operationId": "Api::V1::Tags#show",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the tag."
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
