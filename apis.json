@@ -1,0 +1,95 @@
+{
+    "name": "US Digital Registry",
+    "description": "<p>Whether for access to emergency, financial or education public services, users need to trust they are engaging with official U.S. government digital accounts. The U.S. Digital Registry serves as the authoritative resource for agencies, citizens and developers to confirm the official status of social media and public-facing collaboration accounts, mobile apps and mobile websites, and help prevent exploitation from unofficial sources, phishing scams or malicious entities.<\/p>",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/digital-gov-logo.jpeg",
+    "tags": [
+        "federal government   gsa",
+        "general data",
+        "have api"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/us-digital-registry\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "U.S. Digital Registry Agency API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/digital-gov-logo.jpeg",
+            "humanURL": "https:\/\/usdigitalregistry.digitalgov.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/u-s--digital-registry-agency-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/u-s--digital-registry-agency-api.json"
+                }
+            ]
+        },
+        {
+            "name": "U.S. Digital Registry Mobile App API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/digital-gov-logo.jpeg",
+            "humanURL": "https:\/\/usdigitalregistry.digitalgov.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/u-s--digital-registry-mobile-app-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/u-s--digital-registry-mobile-app-api.json"
+                }
+            ]
+        },
+        {
+            "name": "U.S. Digital Registry Tag API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/digital-gov-logo.jpeg",
+            "humanURL": "https:\/\/usdigitalregistry.digitalgov.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/u-s--digital-registry-tag-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/u-s--digital-registry-tag-api.json"
+                }
+            ]
+        },
+        {
+            "name": "U.S. Digital Registry Social Media API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/digital-gov-logo.jpeg",
+            "humanURL": "https:\/\/usdigitalregistry.digitalgov.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/u-s--digital-registry-social-media-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/u-s--digital-registry-social-media-api.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Website",
+            "url": "https:\/\/usdigitalregistry.digitalgov.gov"
+        }
+    ]
+}
