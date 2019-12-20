@@ -1,0 +1,116 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "U.S. Digital Registry Social Media API",
+        "description": "Provides access to the social media accounts for top federal agencies.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsusdigitalregistry.digitalgov.gov\/api\/v1"
+    ],
+    "paths": {
+        "\/social_media\/verify.json": {
+            "get": {
+                "summary": "Social Media Verify",
+                "description": "This returns an agency based on an URL. If not found, it will return a 404",
+                "operationId": "Api::V1::SocialMedia#verify",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "url",
+                        "in": "query",
+                        "description": "URL of social media account"
+                    }
+                ]
+            }
+        },
+        "\/social_media\/services.json": {
+            "get": {
+                "summary": "Social Media Services",
+                "description": "This returns a list of services along with the number of accounts registered with them",
+                "operationId": "Api::V1::SocialMedia#services",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/social_media\/tokeninput.json": {
+            "get": {
+                "summary": "Social Media Token",
+                "description": "This returns tokens representing services, agencies, tags, and a basic text search token for the purpose of building search dialogs",
+                "operationId": "Api::V1::SocialMedia#tokeninput",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "String to compare to the various values"
+                    }
+                ]
+            }
+        },
+        "\/social_media.json": {
+            "get": {
+                "summary": "Social Media",
+                "description": "This lists all active accounts. It accepts parameters to perform basic search as well as search by service, agency, or tags.",
+                "operationId": "Api::V1::SocialMedia#index",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "String to compare to the various values"
+                    },
+                    {
+                        "name": "services",
+                        "in": "query",
+                        "description": "Comma separated list of service keys (available via services call)"
+                    },
+                    {
+                        "name": "agencies",
+                        "in": "query",
+                        "description": "Comma separated list of agency ids"
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "Language of the social media accounts to return"
+                    },
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "description": "Comma separated list of tag ids"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Number of results per page, defaults to 25"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number"
+                    }
+                ]
+            }
+        },
+        "\/social_media\/{id}.json": {
+            "get": {
+                "summary": "Social Media",
+                "description": "This returns an agency based on an ID.",
+                "operationId": "Api::V1::SocialMedia#show",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the account"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
