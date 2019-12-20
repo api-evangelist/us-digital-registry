@@ -1,0 +1,202 @@
+{
+    "id": "90cc7fb41a3e010a2a87f22ccdbbefa8",
+    "name": "U.S. Digital Registry Social Media API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "12c25f95b8b5e6a918da836941ac3ab3",
+            "name": "Social Media Verify",
+            "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/social_media\/verify.json",
+            "description": "This returns an agency based on an URL. If not found, it will return a 404",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "url",
+                    "description": "URL of social media account",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "90cc7fb41a3e010a2a87f22ccdbbefa8",
+            "rawModeData": ""
+        },
+        {
+            "id": "6f971a2a8eabb2b5ee4c4322f9c5c047",
+            "name": "Social Media Services",
+            "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/social_media\/services.json",
+            "description": "This returns a list of services along with the number of accounts registered with them",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "90cc7fb41a3e010a2a87f22ccdbbefa8",
+            "rawModeData": ""
+        },
+        {
+            "id": "f3e0d318c0c73589778fd2246bdaefbe",
+            "name": "Social Media Token",
+            "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/social_media\/tokeninput.json",
+            "description": "This returns tokens representing services, agencies, tags, and a basic text search token for the purpose of building search dialogs",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "String to compare to the various values",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "90cc7fb41a3e010a2a87f22ccdbbefa8",
+            "rawModeData": ""
+        },
+        {
+            "id": "d6385659b76ffa4d1a13da74f9705073",
+            "name": "Social Media",
+            "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/social_media.json",
+            "description": "This lists all active accounts. It accepts parameters to perform basic search as well as search by service, agency, or tags.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "String to compare to the various values",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "services",
+                    "description": "Comma separated list of service keys (available via services call)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "agencies",
+                    "description": "Comma separated list of agency ids",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "language",
+                    "description": "Language of the social media accounts to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "Comma separated list of tag ids",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Number of results per page, defaults to 25",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Page number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "90cc7fb41a3e010a2a87f22ccdbbefa8",
+            "rawModeData": ""
+        },
+        {
+            "id": "e8c73fc6d6cee2ee5d4ec9002d1a7ff8",
+            "name": "Social Media",
+            "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/social_media\/{id}.json",
+            "description": "This returns an agency based on an ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID of the account",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "90cc7fb41a3e010a2a87f22ccdbbefa8",
+            "rawModeData": ""
+        }
+    ]
+}
