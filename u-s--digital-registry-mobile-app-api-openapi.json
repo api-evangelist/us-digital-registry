@@ -1,0 +1,87 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "U.S. Digital Registry Mobile App API",
+        "description": "Providing access to a directory of the mobile applications for federal agencies.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/"
+    ],
+    "paths": {
+        "\/mobile_apps\/tokeninput.json": {
+            "get": {
+                "summary": "Mobile App Token",
+                "description": "This returns tokens representing agencies, tags, and a basic text search token for the purpose of building search dialogs",
+                "operationId": "Api::V1::MobileApps#tokeninput",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "String to compare to the various values"
+                    }
+                ]
+            }
+        },
+        "\/mobile_apps.json": {
+            "get": {
+                "summary": "Mobile Apps",
+                "description": "This lists all active mobile apps.  It accepts parameters to perform basic search as well as searching by tag and agency.",
+                "operationId": "Api::V1::MobileApps#index",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "String to compare to the various values"
+                    },
+                    {
+                        "name": "agencies",
+                        "in": "query",
+                        "description": "Comma separated list of agency ids"
+                    },
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "description": "Comma separated list of tag ids"
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "Language of the social media accounts to return"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Number of results per page, defaults to 25"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number"
+                    }
+                ]
+            }
+        },
+        "\/mobile_apps\/{id}.json": {
+            "get": {
+                "summary": "Mobile App",
+                "description": "This returns an mobile app based on an ID.",
+                "operationId": "Api::V1::MobileApps#show",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the mobile app"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
