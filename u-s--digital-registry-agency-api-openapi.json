@@ -1,0 +1,78 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0",
+        "title": "U.S. Digital Registry Agency API",
+        "description": "Provides access to a list of federal agencies.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsusdigitalregistry.digitalgov.gov\/api\/v1"
+    ],
+    "paths": {
+        "\/agencies.json": {
+            "get": {
+                "summary": "Agencies",
+                "description": "This lists all active agencies in the system. These agencies can be used to query for social media accounts, mobile products, and galleries.",
+                "operationId": "Api::V1::Agencies#index",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "String to compare to the name & acronym of the agencies."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Number of results per page"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number"
+                    },
+                    {
+                        "name": "no_accounts",
+                        "in": "query",
+                        "description": "Including this parameter with value 'true' will cause the endpoint to include agencies that have no account in the system"
+                    }
+                ]
+            }
+        },
+        "\/agencies\/{id}.json": {
+            "get": {
+                "summary": "Agency",
+                "description": "This returns an agency based on an ID.",
+                "operationId": "Api::V1::Agencies#show",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the agency"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "metadata": {
+                "type": "object",
+                "properties": {
+                    "results": {
+                        "description": "The results.",
+                        "type": "array"
+                    }
+                }
+            },
+            "results": {
+                "type": "object"
+            },
+            "agency": {
+                "type": "object"
+            }
+        }
+    }
+}
