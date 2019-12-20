@@ -1,0 +1,119 @@
+{
+    "id": "c62c0406f9c55c497554b6892fd0d853",
+    "name": "U.S. Digital Registry Tag API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "dd7536a26c1a083f031c5514254f02e4",
+            "name": "Tag Types",
+            "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/\/tags\/types.json",
+            "description": "This returns a tag based on an ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c62c0406f9c55c497554b6892fd0d853",
+            "rawModeData": ""
+        },
+        {
+            "id": "c2fc0f93f484b04cbf0930da73b5eb63",
+            "name": "Tags",
+            "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/\/tags.json",
+            "description": "This lists all tags.  It accepts parameters to perform basic search.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "String to compare to the short name of tags.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Comma separated list of tag types",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Number of results per page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Page number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c62c0406f9c55c497554b6892fd0d853",
+            "rawModeData": ""
+        },
+        {
+            "id": "85eb98c8fb6195472233196cf3a5d7a6",
+            "name": "Tag",
+            "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/\/tags\/{id}.json",
+            "description": "This returns a tag based on an ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID of the tag.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "c62c0406f9c55c497554b6892fd0d853",
+            "rawModeData": ""
+        }
+    ]
+}
