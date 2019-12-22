@@ -1,5 +1,5 @@
 {
-    "id": "c62c0406f9c55c497554b6892fd0d853",
+    "id": "6942ff75ed37ec4b8f488bfc5155a67d",
     "name": "U.S. Digital Registry Tag API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "dd7536a26c1a083f031c5514254f02e4",
+            "id": "ecd92e97db5cb5d577c5d6df3d27e8d6",
             "name": "Tag Types",
             "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/\/tags\/types.json",
             "description": "This returns a tag based on an ID.",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c62c0406f9c55c497554b6892fd0d853",
+            "collectionId": "6942ff75ed37ec4b8f488bfc5155a67d",
             "rawModeData": ""
         },
         {
-            "id": "c2fc0f93f484b04cbf0930da73b5eb63",
+            "id": "3739bf62e65dde0bb04bc91a8eb3c02d",
             "name": "Tags",
             "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/\/tags.json",
             "description": "This lists all tags.  It accepts parameters to perform basic search.",
@@ -81,11 +81,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c62c0406f9c55c497554b6892fd0d853",
+            "collectionId": "6942ff75ed37ec4b8f488bfc5155a67d",
             "rawModeData": ""
         },
         {
-            "id": "85eb98c8fb6195472233196cf3a5d7a6",
+            "id": "8415333f0bf308222fdd66d408320140",
             "name": "Tag",
             "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/\/tags\/{id}.json",
             "description": "This returns a tag based on an ID.",
@@ -112,7 +112,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c62c0406f9c55c497554b6892fd0d853",
+            "collectionId": "6942ff75ed37ec4b8f488bfc5155a67d",
             "rawModeData": ""
         }
     ]
