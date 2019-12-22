@@ -1,5 +1,5 @@
 {
-    "id": "4fcd4b160c168d59414bdd6f35df72a1",
+    "id": "06560016bdc593b199d96c6f9b4a12e0",
     "name": "U.S. Digital Registry Mobile App API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "26612daa39edae21775cafbbc5a30c97",
+            "id": "fb24fb50b0ba5265e145faf008e70c74",
             "name": "Mobile App Token",
             "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/\/mobile_apps\/tokeninput.json",
             "description": "This returns tokens representing agencies, tags, and a basic text search token for the purpose of building search dialogs",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4fcd4b160c168d59414bdd6f35df72a1",
+            "collectionId": "06560016bdc593b199d96c6f9b4a12e0",
             "rawModeData": ""
         },
         {
-            "id": "b1eb0ba8d2f7a173c69f5021fc2a9b80",
+            "id": "4d24c466f713ae8ce92c9e7f4c3c142e",
             "name": "Mobile Apps",
             "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/\/mobile_apps.json",
             "description": "This lists all active mobile apps.  It accepts parameters to perform basic search as well as searching by tag and agency.",
@@ -103,11 +103,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4fcd4b160c168d59414bdd6f35df72a1",
+            "collectionId": "06560016bdc593b199d96c6f9b4a12e0",
             "rawModeData": ""
         },
         {
-            "id": "a1a9b816b9f225017068e2aa466781a6",
+            "id": "da9e9c877a67f6d41a6ce3686818f7ce",
             "name": "Mobile App",
             "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/\/mobile_apps\/{id}.json",
             "description": "This returns an mobile app based on an ID.",
@@ -134,7 +134,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4fcd4b160c168d59414bdd6f35df72a1",
+            "collectionId": "06560016bdc593b199d96c6f9b4a12e0",
             "rawModeData": ""
         }
     ]
