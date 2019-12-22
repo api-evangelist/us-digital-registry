@@ -1,5 +1,5 @@
 {
-    "id": "90cc7fb41a3e010a2a87f22ccdbbefa8",
+    "id": "1a0dfbebf665b947fdaecdacaf0b3e62",
     "name": "U.S. Digital Registry Social Media API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "12c25f95b8b5e6a918da836941ac3ab3",
+            "id": "dac0fcc14c99aa53fc2d415d77b61d88",
             "name": "Social Media Verify",
             "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/social_media\/verify.json",
             "description": "This returns an agency based on an URL. If not found, it will return a 404",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "90cc7fb41a3e010a2a87f22ccdbbefa8",
+            "collectionId": "1a0dfbebf665b947fdaecdacaf0b3e62",
             "rawModeData": ""
         },
         {
-            "id": "6f971a2a8eabb2b5ee4c4322f9c5c047",
+            "id": "586810760c9a7f1ef0fe0d9393dca7f6",
             "name": "Social Media Services",
             "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/social_media\/services.json",
             "description": "This returns a list of services along with the number of accounts registered with them",
@@ -60,11 +60,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "90cc7fb41a3e010a2a87f22ccdbbefa8",
+            "collectionId": "1a0dfbebf665b947fdaecdacaf0b3e62",
             "rawModeData": ""
         },
         {
-            "id": "f3e0d318c0c73589778fd2246bdaefbe",
+            "id": "96ad7837781b6728aa1c01f9206a3296",
             "name": "Social Media Token",
             "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/social_media\/tokeninput.json",
             "description": "This returns tokens representing services, agencies, tags, and a basic text search token for the purpose of building search dialogs",
@@ -91,11 +91,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "90cc7fb41a3e010a2a87f22ccdbbefa8",
+            "collectionId": "1a0dfbebf665b947fdaecdacaf0b3e62",
             "rawModeData": ""
         },
         {
-            "id": "d6385659b76ffa4d1a13da74f9705073",
+            "id": "cc3e5f08b06c9d26eecb501c14a4f676",
             "name": "Social Media",
             "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/social_media.json",
             "description": "This lists all active accounts. It accepts parameters to perform basic search as well as search by service, agency, or tags.",
@@ -164,11 +164,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "90cc7fb41a3e010a2a87f22ccdbbefa8",
+            "collectionId": "1a0dfbebf665b947fdaecdacaf0b3e62",
             "rawModeData": ""
         },
         {
-            "id": "e8c73fc6d6cee2ee5d4ec9002d1a7ff8",
+            "id": "b213866435df63bf1566dc1058e94868",
             "name": "Social Media",
             "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/social_media\/{id}.json",
             "description": "This returns an agency based on an ID.",
@@ -195,7 +195,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "90cc7fb41a3e010a2a87f22ccdbbefa8",
+            "collectionId": "1a0dfbebf665b947fdaecdacaf0b3e62",
             "rawModeData": ""
         }
     ]
