@@ -1,5 +1,5 @@
 {
-    "id": "ee3c861ce5a2de831c96b5e74617a182",
+    "id": "f89d117584d5fab61a6b626dba45049e",
     "name": "U.S. Digital Registry Agency API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "fe1d591892617dde82958964d48ceb26",
+            "id": "547351b4f1ea5e62bc72c10d4f0cdfe0",
             "name": "Agencies",
             "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/agencies.json",
             "description": "This lists all active agencies in the system. These agencies can be used to query for social media accounts, mobile products, and galleries.",
@@ -58,11 +58,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ee3c861ce5a2de831c96b5e74617a182",
+            "collectionId": "f89d117584d5fab61a6b626dba45049e",
             "rawModeData": ""
         },
         {
-            "id": "bbf03203c0a8af54fceb63766cdaa0b1",
+            "id": "c6af4236db98524da50202c8bd90f6c5",
             "name": "Agency",
             "url": "httpsusdigitalregistry.digitalgov.gov\/api\/v1\/agencies\/{id}.json",
             "description": "This returns an agency based on an ID.",
@@ -89,7 +89,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ee3c861ce5a2de831c96b5e74617a182",
+            "collectionId": "f89d117584d5fab61a6b626dba45049e",
             "rawModeData": ""
         }
     ]
